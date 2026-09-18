@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="app">
+        <div class="app__container">
+        <header class="app__header">
+        <h1 class="app__title">Список задач</h1>
+        </header>
+
+        <!-- form add -->
+        <form class="app__form" id="todo-form" autocomplete="off">
+            <input type="text" id="todo-input" class="app__input" placeholder="Что нужно сделать?" aria-label="Новая задача" required>
+            <button type="submit" class="app__submit">Добавить</button>
+        </form>
+
+        <!-- search -->
+         <div class="app__search">
+         <span class="app__search-icon">🔍</span>
+         <input type="text" id="search-input" class="app__input-search" placeholder="Поиск..." aria-label="Поиск задач">
+         </div>
+         <!-- filter -->
+          <div class="app__filters">
+            <button class="filter is-active" data-filter="all" aria-pressed="true">Все</button>
+            <button class="filter" data-filter="active" aria-pressed="false">Активные</button>
+            <button class="filter" data-filter="completed" aria-pressed="false">Выполненные</button>
+          </div>
+
+          <!-- list of tasks -->
+           <ul class="todo-list" id="todo-list">
+            <li class="todo-li"> </li>
+           </ul>
+
+           <!-- empty state -->
+            <p class="empty" id="empty-state" hidden>Задач пока нет</p>
+
+            <!-- footer|counter|clear done -->
+            <footer class="app__footer">
+                <span class="counter">Осталось: 0</span>
+                <button class="clear-done" id="clear-done">Очистить выполненные</button>
+            </footer>
+        </div>
+    </main>
+<script src="script.js" defer></script>    
+</body>
+</html>

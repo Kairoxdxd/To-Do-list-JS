@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa; 
+}
+
+.app {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.app__container {
+     width: min(500px, 100%);
+    aspect-ratio: 1/1;
+    background-color: grey;
+    border-radius: 8px;
+     background-color: #ffffff;
+}
+
+.app__title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.app__form {
+    display: flex;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 10px
+}
+
+.app__input {
+    background-color: #f5f7fa; 
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+    padding: 12px 20px;
+    min-width: 0;
+    flex: 1;
+    outline: none;
+    border-radius: 16px;
+}
+
+.app__input:focus {
+    border-color:  #4a90e2;
+    background-color: #ffffff;
+}
+
+.app__submit {
+    padding: 0px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.app__submit:hover {
+    background-color: #357abd;
+}
+
+.app__search {
+    display: flex;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 10px;
+    position: relative;
+}
+
+.app__input-search {
+    background-color: #f5f7fa; 
+    border: 1px solid #e0e0e0;
+    font-size: 12px;
+    min-width: 0;
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 16px;
+
+}
+
+.app__input-search:focus {
+    border-color:  #4a90e2;
+    background-color: #ffffff;
+}
+
+.app__search-icon {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 15px;
+    top: 50%;
+}
+
+.app__filters {
+    margin: 20px auto 0;
+    max-width: 450px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 999px;
+    overflow: hidden;
+
+}
+
+.filter {
+    flex: 1;
+    width: 100%;
+    padding: 6px 10px;
+    background-color: transparent;
+    text-align: center;
+    transition:  background 0.2s, color 0.2s;
+    border-right: 1px solid red;
+    font-size: 13px;
+    border-radius: 16px;
+
+}
+.filter:last-child {
+    border-right: none;
+}
+
+.filter:hover:not(.is-active) {
+  background: #f0f2f5;
+}
+
+.is-active {
+  background: #4a90e2;
+  color: white;
+}
