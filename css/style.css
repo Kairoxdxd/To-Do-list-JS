@@ -115,7 +115,7 @@ body {
     background-color: transparent;
     text-align: center;
     transition:  background 0.2s, color 0.2s;
-    border-right: 1px solid red;
+    border-right: 1px solid grey;
     font-size: 13px;
     border-radius: 16px;
 
@@ -131,4 +131,49 @@ body {
 .is-active {
   background: #4a90e2;
   color: white;
+}
+
+.app__stats {
+     display: flex;
+    justify-content: space-around;
+}
+
+.app__counter {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.app__clear-done {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.todo-li {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin: 15px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 12px;
+    height: 38px;
+    align-items: center;
+}
+
+.todo-span {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.btn-delete {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 4px 8px;
+    cursor: pointer;
+    margin-left: auto;
 }

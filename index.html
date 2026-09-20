@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
         <!-- form add -->
         <form class="app__form" id="todo-form" autocomplete="off">
             <input type="text" id="todo-input" class="app__input" placeholder="Что нужно сделать?" aria-label="Новая задача" required>
-            <button type="submit" class="app__submit">Добавить</button>
+            <button type="submit" class="app__submit" id>Добавить</button>
         </form>
 
         <!-- search -->
@@ -32,19 +32,18 @@
             <button class="filter" data-filter="completed" aria-pressed="false">Выполненные</button>
           </div>
 
-          <!-- list of tasks -->
+           <div class="app__stats">
+                <span class="app__counter">Осталось: 0</span>
+                <button class="app__clear-done" id="clear-done">Очистить выполненные</button>
+            </div>
+
+            <div class="app__list-wrapper">
            <ul class="todo-list" id="todo-list">
-            <li class="todo-li"> </li>
            </ul>
 
            <!-- empty state -->
-            <p class="empty" id="empty-state" hidden>Задач пока нет</p>
-
-            <!-- footer|counter|clear done -->
-            <footer class="app__footer">
-                <span class="counter">Осталось: 0</span>
-                <button class="clear-done" id="clear-done">Очистить выполненные</button>
-            </footer>
+            <p class="empty" id="empty-state">Задач пока нет</p>
+            </div>
         </div>
     </main>
 <script src="script.js" defer></script>    
