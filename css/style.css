@@ -177,3 +177,11 @@ body {
     cursor: pointer;
     margin-left: auto;
 }
+
+.empty {
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    font-size: 20px;
+    font-weight: 600;
+}
