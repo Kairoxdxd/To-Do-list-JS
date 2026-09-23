@@ -17,19 +17,19 @@
         <!-- form add -->
         <form class="app__form" id="todo-form" autocomplete="off">
             <input type="text" id="todo-input" class="app__input" placeholder="Что нужно сделать?" aria-label="Новая задача" required>
-            <button type="submit" class="app__submit" id>Добавить</button>
+            <button type="submit" class="app__submit">Добавить</button>
         </form>
 
         <!-- search -->
          <div class="app__search">
          <span class="app__search-icon">🔍</span>
-         <input type="text" id="search-input" class="app__input-search" placeholder="Поиск..." aria-label="Поиск задач">
+         <input type="search" id="search-input" class="app__input-search" placeholder="Поиск..." aria-label="Поиск задач">
          </div>
          <!-- filter -->
           <div class="app__filters">
-            <button class="filter is-active" data-filter="all" aria-pressed="true">Все</button>
-            <button class="filter" data-filter="active" aria-pressed="false">Активные</button>
-            <button class="filter" data-filter="completed" aria-pressed="false">Выполненные</button>
+            <button class="app__filter is-active" data-filter="all" aria-pressed="true">Все</button>
+            <button class="app__filter" data-filter="active" aria-pressed="false">Активные</button>
+            <button class="app__filter" data-filter="completed" aria-pressed="false">Выполненные</button>
           </div>
 
            <div class="app__stats">

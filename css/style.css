@@ -108,7 +108,7 @@ body {
 
 }
 
-.filter {
+.app__filter {
     flex: 1;
     width: 100%;
     padding: 6px 10px;
@@ -120,11 +120,11 @@ body {
     border-radius: 16px;
 
 }
-.filter:last-child {
+.app__filter:last-child {
     border-right: none;
 }
 
-.filter:hover:not(.is-active) {
+.app__filter:hover:not(.is-active) {
   background: #f0f2f5;
 }
 
@@ -148,6 +148,7 @@ body {
     border: none;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
